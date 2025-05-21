@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -7,9 +8,10 @@ import '../styles/global.css'
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/astro-storefront/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Storefront</title>
+		<ClientRouter />
 	</head>
 	<body>
 		<slot />
@@ -17,7 +19,7 @@ import '../styles/global.css'
 
 	<script is:inline type="module" src="https://assets.moonbase.sh/storefront/moonbase.js"></script>
 	<script is:inline type="text/javascript">
-		document.addEventListener('DOMContentLoaded', () => {
+		document.addEventListener('astro:page-load', () => {
 			// TODO: Replace this with the URL of your Moonbase account
 			Moonbase.setup('https://demo.moonbase.sh')
 		})
