@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import productImage from '../assets/dcae7953-f89c-409c-887f-82576c8a78a0.png'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -13,7 +14,7 @@ import Layout from "../layouts/Layout.astro";
 			<div class="relative overflow-hidden rounded-lg">
 				<div class="absolute inset-0">
 					<img
-						src="/dcae7953-f89c-409c-887f-82576c8a78a0.png"
+						src={productImage.src}
 						alt=""
 						class="size-full object-cover"
 					/>
@@ -44,7 +45,7 @@ import Layout from "../layouts/Layout.astro";
 								Add to cart
 							</button>
 							<a
-								href="/juce-app-demo"
+								href="astro-storefront/juce-app-demo"
 								class="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
 							>
 								Learn more

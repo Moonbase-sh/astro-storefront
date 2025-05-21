@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import productImage from '../assets/dcae7953-f89c-409c-887f-82576c8a78a0.png'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -14,7 +15,7 @@ import Layout from "../layouts/Layout.astro";
 			<!-- Product image -->
 			<div class="lg:col-span-4 lg:row-end-1">
 				<img
-					src="/dcae7953-f89c-409c-887f-82576c8a78a0.png"
+					src={productImage.src}
 					alt="Sample of 30 icons with friendly and fun details in outline, filled, and brand color styles."
 					class="aspect-[4/3] w-full rounded-lg bg-gray-100 object-cover"
 				/>
